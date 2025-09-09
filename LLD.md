@@ -135,6 +135,40 @@
 - [ ] Only one `return`, no `break` / `continue` in loops — except in very small functions where multiple exits are clearer.
 
 ---
+
+# 📝 Comments Checklist
+
+**Rule of Thumb:** The best comment is the one you didn’t need to write — because the code was expressive enough.  
+Write comments only when they add clarity about **intent, constraints, or consequences**.  
+
+### ✅ Good Comments
+- [ ] **Informative** – add missing context (regex format, units, data ranges).  
+- [ ] **Intent** – explain *why* (e.g., intentionally using `Promise.all` to reproduce race).  
+- [ ] **Clarification** – highlight language quirks (`NaN !== NaN`, `typeof null`).  
+- [ ] **Warning of Consequence** – call out dangerous/test-only behavior.  
+- [ ] **TODO / FIXME / HACK** – track known debt or future work.  
+- [ ] **Amplification** – emphasize subtle but crucial operations (`.toLowerCase()` before compare).  
+- [ ] **Public API Docs** – use TSDoc/JSDoc for exported functions, not private helpers.  
+
+### ❌ Bad Comments
+- [ ] **Mumbling** – vague/unclear (`// uh, handle error somehow`).  
+- [ ] **Redundant** – restates code (`// increment i by 1`).  
+- [ ] **Misleading** – out of sync with implementation.  
+- [ ] **Mandated Boilerplate** – pointless `@param`/`@return` repeating obvious info.  
+- [ ] **Noise** – emotional filler, jokes, frustration.  
+- [ ] **Journal / Bylines** – history or authorship (Git handles this).  
+- [ ] **Position Markers** – visual clutter (`//// Section ////`).  
+- [ ] **Closing Brace Comments** – `} // end if`.  
+- [ ] **Commented-Out Code** – delete, VCS is history.  
+- [ ] **HTML in TSDoc** – let tools handle styling.  
+- [ ] **Non-local Information** – references to external docs/paths that rot.  
+- [ ] **Too Much Information** – essays or design papers inline (link ADR instead).  
+- [ ] **Inobvious Connection** – unclear tie between comment & code.  
+- [ ] **Scary Noise** – dramatic but unhelpful (`// DANGER!!!`).  
+- [ ] **Function Headers** – repeating signatures in prose.  
+
+---
+
 # 📜 LeBlanc's Law: "Later Equals Never"
 A list of things we’ve intentionally deferred (to avoid forgetting):
 - [ ] _______________
