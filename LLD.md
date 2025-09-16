@@ -169,6 +169,33 @@ Write comments only when they add clarity about **intent, constraints, or conseq
 
 ---
 
+
+# 🖋️ Formatting Checklist (Clean Code – Chapter 5)
+
+### Purpose
+Code formatting is about **communication**, and communication is the professional developer's first order of business.  
+
+---
+
+## Vertical Formatting
+- [ ] **File Size** – Files are ~200–500 lines (not a hard limit).  
+- [ ] **Newspaper Metaphor** – High-level functions at top, details below, lowest-level helpers at the bottom.  
+- [ ] **Vertical Openness** – Blank lines separate distinct concepts.  
+- [ ] **Vertical Density** – No unnecessary blank lines between strongly related code.  
+- [ ] **Vertical Distance** – Related concepts are kept close.  
+  - [ ] Variables declared near usage.  
+  - [ ] Loop variables declared in loop statements.  
+  - [ ] Instance variables at the top of classes.  
+  - [ ] Dependent functions follow newspaper metaphor.  
+  - [ ] Conceptually related functions grouped together.  
+
+---
+
+## Horizontal Formatting
+- [ ] **Line Length** – ≤100 chars (≤120 in rare justified cases).  
+- [ ] **Openness/Density** – Spaces around weakly related tokens, tight for strongly related ones.  
+- [ ] **Breaking Indentation** – Consistent indentation even for short `if` / `while` / `for` bodies.  
+- [ ] **Dummy Scopes** – Empty loop bodies use an indented `;` for clarity.  
 # 📜 LeBlanc's Law: "Later Equals Never"
 A list of things we’ve intentionally deferred (to avoid forgetting):
 - [ ] _______________

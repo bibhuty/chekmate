@@ -1,0 +1,4 @@
+- Exceptions of rules
+- Detail of rules when used as a checklist for reference
+- Automation with linters
+- Automation with LLMs
