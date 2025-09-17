@@ -221,6 +221,17 @@ Code formatting is about **communication**, and communication is the professiona
 - [ ] Is the class either a **data structure** (fields only) or an **object** (behavior + hidden state)?  
 - [ ] Are hybrids (fields exposed + behavior + persistence) avoided?  
 - [ ] If Active Record / ORM entities are used, is it a conscious choice for CRUD simplicity, not core domain logic?  
+# ⚠️ Error Handling (LLD)
+
+- [ ] **Happy Path Clear** → Error handling does not obscure the main intent of the function.  
+- [ ] **Exceptions over Return Codes** → Do not use error codes; throw exceptions instead.  
+- [ ] **Narrow Try/Catch Scopes** → Keep `try` blocks small and focused on a single transaction.  
+- [ ] **Unchecked Exceptions** → Use unchecked exceptions in application code (avoid checked exceptions that force boilerplate handling).  
+- [ ] **Caller-Oriented Exceptions** → Define exception classes only when the caller needs to handle them differently.  
+- [ ] **Normal Flow Defined** → Handle expected cases in the function logic (special case objects, default values), not via exceptions.  
+- [ ] **No Returning `null`** → Return a special case object or throw an exception instead.  
+- [ ] **No Passing `null`** → Forbid `null` arguments by contract; if unavoidable, fail fast.  
+- [ ] **Context-Rich Exceptions** → Every thrown exception includes enough context to locate and understand the error.  
 # 📜 LeBlanc's Law: "Later Equals Never"
 A list of things we’ve intentionally deferred (to avoid forgetting):
 - [ ] _______________
