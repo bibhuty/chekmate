@@ -196,6 +196,31 @@ Code formatting is about **communication**, and communication is the professiona
 - [ ] **Openness/Density** – Spaces around weakly related tokens, tight for strongly related ones.  
 - [ ] **Breaking Indentation** – Consistent indentation even for short `if` / `while` / `for` bodies.  
 - [ ] **Dummy Scopes** – Empty loop bodies use an indented `;` for clarity.  
+# 📦 Data & Abstraction Checklist
+
+## Data Abstraction
+- [ ] Does the class expose **intent/essence** instead of raw fields?  
+- [ ] Are getters/setters avoided unless truly necessary?  
+- [ ] Are higher-level operations provided (e.g., `translate()`, `percentRemaining()`) instead of low-level accessors?  
+
+## Data/Object Anti-Symmetry
+- [ ] Have we consciously chosen **procedural** (easy new functions, hard new types) vs **OO** (easy new types, hard new functions)?  
+- [ ] Are simple data structures kept at **boundaries** (DTOs, records), and objects with behavior in the **domain core**?  
+- [ ] Is the chosen style consistent for this module?  
+
+## Law of Demeter
+- [ ] Does each method only talk to:
+  - Itself  
+  - Objects it created  
+  - Objects passed as parameters  
+  - Its own fields  
+- [ ] Are there **no train wrecks** (`a.getB().getC().getD()`)?  
+- [ ] Is delegation/facade used instead of exposing internals?  
+
+## Hybrids
+- [ ] Is the class either a **data structure** (fields only) or an **object** (behavior + hidden state)?  
+- [ ] Are hybrids (fields exposed + behavior + persistence) avoided?  
+- [ ] If Active Record / ORM entities are used, is it a conscious choice for CRUD simplicity, not core domain logic?  
 # 📜 LeBlanc's Law: "Later Equals Never"
 A list of things we’ve intentionally deferred (to avoid forgetting):
 - [ ] _______________
