@@ -239,6 +239,50 @@ Code formatting is about **communication**, and communication is the professiona
 - [ ] Treat learning tests as **disposable experiments** — they test assumptions, not product logic. 
 - [ ] When integrating with code that doesn’t exist yet, define your own **interface/abstraction** and build against it.  
 - [ ] If the real dependency’s API doesn’t match your abstraction, introduce an **Adapter** behind your interface.  
+# ✅ Unit Tests Checklist
+
+## The Three Laws of TDD
+- [ ] **First Law:** Write a failing test before writing production code.
+- [ ] **Second Law:** Write only enough of a test to fail (not compiling counts as failing).
+- [ ] **Third Law:** Write only enough production code to make the test pass.
+
+---
+
+## Keeping Tests Clean
+- [ ] Tests are as important as production code → keep them simple, expressive, and maintainable.
+- [ ] Tests follow **BUILD–OPERATE–CHECK** structure.
+- [ ] Tests enable **fearless change** by covering production code thoroughly.
+- [ ] Avoid “dirty tests” — unreadable tests are as bad as no tests.
+
+---
+
+## Domain-Specific Testing Language (DSTL)
+- [ ] Tests use **problem-domain terms**, not low-level technical details.
+- [ ] Common setup & boilerplate are hidden behind expressive helpers.
+- [ ] Tests read like **business rules** (clear intent, minimal noise).
+
+---
+
+## A Dual Standard
+- [ ] Test helpers may sacrifice efficiency (memory/CPU) for clarity.
+- [ ] Never sacrifice **cleanliness** — test code must stay simple and expressive.
+- [ ] Production code = efficient + clean; Test code = clear + clean (efficiency optional).
+
+---
+
+## Rule for Test Functions
+- [ ] Test **one concept per test**.
+- [ ] Multiple asserts allowed if they support the same concept.
+- [ ] Never mix multiple concepts (e.g., area + perimeter in same test).
+
+---
+
+## F.I.R.S.T Principles
+- [ ] **Fast** → Tests run quickly, or they’ll be skipped.
+- [ ] **Independent** → Tests do not rely on each other’s state or order.
+- [ ] **Repeatable** → Same result on any machine, CI, or environment.
+- [ ] **Self-validating** → Tests give a boolean outcome (pass/fail), no manual log-checks.
+- [ ] **Timely** → Write tests just before writing production code.
 # 📜 LeBlanc's Law: "Later Equals Never"
 A list of things we’ve intentionally deferred (to avoid forgetting):
 - [ ] _______________

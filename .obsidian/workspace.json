@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "09.UnitTests"
             }
+          },
+          {
+            "id": "5f3eedded29ffb72",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LLD.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "LLD"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CleanCode/09.UnitTests.md",
+                "file": "LLD.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 09.UnitTests"
+              "title": "Backlinks for LLD"
             }
           },
           {
@@ -167,10 +182,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d417c4514b281035",
+  "active": "5f3eedded29ffb72",
   "lastOpenFiles": [
-    "LLD.md",
     "CleanCode/09.UnitTests.md",
+    "LLD.md",
     "CleanCode/08.Boundaries.md",
     "CleanCode/07.ErrorHandling.md",
     "CleanCode/06.ObjectsAndDataStructures.md",
