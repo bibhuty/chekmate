@@ -232,6 +232,13 @@ Code formatting is about **communication**, and communication is the professiona
 - [ ] **No Returning `null`** → Return a special case object or throw an exception instead.  
 - [ ] **No Passing `null`** → Forbid `null` arguments by contract; if unavoidable, fail fast.  
 - [ ] **Context-Rich Exceptions** → Every thrown exception includes enough context to locate and understand the error.  
+# 🛡️ Boundary Checklist (Clean Code – Chapter 8)
+- [ ] Do not expose raw collections (`Map`, `Record`, arrays) across module boundaries.  
+- [ ] Public APIs return **domain-specific abstractions**, not generic types or third-party objects.  
+- [ ] Maintain **learning tests** for major third-party libraries to lock down expected behavior.  
+- [ ] Treat learning tests as **disposable experiments** — they test assumptions, not product logic. 
+- [ ] When integrating with code that doesn’t exist yet, define your own **interface/abstraction** and build against it.  
+- [ ] If the real dependency’s API doesn’t match your abstraction, introduce an **Adapter** behind your interface.  
 # 📜 LeBlanc's Law: "Later Equals Never"
 A list of things we’ve intentionally deferred (to avoid forgetting):
 - [ ] _______________
