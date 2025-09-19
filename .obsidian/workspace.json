@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CleanCode/11.Systems.md",
+                "file": "CleanCode/10.Classes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "11.Systems"
+              "title": "10.Classes"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CleanCode/11.Systems.md",
+                "file": "CleanCode/10.Classes.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 11.Systems"
+              "title": "Backlinks for 10.Classes"
             }
           },
           {
@@ -170,10 +170,10 @@
   "active": "5f3eedded29ffb72",
   "lastOpenFiles": [
     "LLD.md",
+    "CleanCode/11.Systems.md",
     "CleanCode/10.Classes.md",
     "CleanCode/TODO.md",
     "CleanCode/09.UnitTests.md",
-    "CleanCode/11.Systems.md",
     "CleanCode/08.Boundaries.md",
     "CleanCode/07.ErrorHandling.md",
     "CleanCode/06.ObjectsAndDataStructures.md",
