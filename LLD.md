@@ -283,6 +283,44 @@ Code formatting is about **communication**, and communication is the professiona
 - [ ] **Repeatable** → Same result on any machine, CI, or environment.
 - [ ] **Self-validating** → Tests give a boolean outcome (pass/fail), no manual log-checks.
 - [ ] **Timely** → Write tests just before writing production code.
+# 📦 Classes & Organization Checklist (Ch. 10)
+
+## Class Organization
+- [ ] Follow order:  
+  1. public static constants  
+  2. private static variables  
+  3. private instance variables  
+  4. public instance variables (rare)  
+  5. public functions  
+  6. private utilities (immediately after their caller)  
+- [ ] Default to `private` / `protected`; loosen encapsulation only as a last resort.
+
+## Classes Should Be Small
+- [ ] Each class has **one clear responsibility**.  
+- [ ] If class name feels vague (e.g., `Manager`, `Processor`), it likely has too many reasons to change.  
+- [ ] Class description should fit in ≤25 words without using “and/or/but/if.”  
+
+## Single Responsibility Principle (SRP)
+- [ ] A class/module has **only one reason to change**.  
+- [ ] Split reporting, storage, and orchestration responsibilities into separate classes.  
+
+## Cohesion
+- [ ] Each method should use ≥1 instance variable.  
+- [ ] If methods don’t touch instance state, they likely belong elsewhere.  
+- [ ] Prefer fewer instance variables; high cohesion means variables are used across most methods.  
+- [ ] Split low-cohesion classes into smaller, focused ones.  
+
+## Organizing for Change
+- [ ] Don’t split classes prematurely; refactor when change forces your hand.  
+- [ ] If adding a new method reveals multiple responsibilities → reorganize into smaller classes.  
+
+## Isolating from Change
+- [ ] Depend on **abstractions**, not on concrete classes.  
+- [ ] Apply the **Dependency Inversion Principle (DIP)**:  
+  - High-level modules should not depend on low-level modules.  
+  - Both should depend on abstractions (interfaces/abstract classes).  
+- [ ] Inject dependencies (constructor injection preferred).  
+- [ ] Avoid tight coupling: clients should not break if implementations change.  
 # 📜 LeBlanc's Law: "Later Equals Never"
 A list of things we’ve intentionally deferred (to avoid forgetting):
 - [ ] _______________
