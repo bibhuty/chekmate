@@ -1,4 +1,3 @@
-import {describe, expect, it, beforeEach} from "vitest";
 import {Duck, FlyWithWings, MallardDuck, RedheadDuck, RubberDuck, WoodenDuck} from "../../src/StrategyPattern/SimUDuck";
 
 describe("SimUDuck", () => {

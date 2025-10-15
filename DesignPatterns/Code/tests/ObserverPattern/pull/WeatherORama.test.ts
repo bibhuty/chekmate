@@ -3,7 +3,7 @@ import {
     ForecastDisplay,
     StatisticsDisplay,
     WeatherStation
-} from "../../src/ObserverPattern/WeatherORama";
+} from "../../../src/ObserverPattern/push/WeatherORama";
 
 describe('WeatherStation Observer Pattern', () => {
     let station: WeatherStation;
