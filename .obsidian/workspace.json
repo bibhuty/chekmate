@@ -4,55 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "b183021c7b37a88b",
+        "id": "d6c7ebd5ee08a6d2",
         "type": "tabs",
         "children": [
           {
-            "id": "e42eb25457320409",
+            "id": "4191dd89cd790591",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CleanCode/01.Programming.md",
+                "file": "DesignPatterns/Notes/02.KeepingYourObjectsInTheKnow.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01.Programming"
-            }
-          }
-        ]
-      },
-      {
-        "id": "d519d73040c6057b",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0ceee21245160942",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
+              "title": "02.KeepingYourObjectsInTheKnow"
             }
           },
           {
-            "id": "8807c75edcd35407",
+            "id": "feece55b21dc2f6b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PRINCIPLES.md",
+                "file": "DesignPatterns/Notes/01.IntroToDesignPatterns.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PRINCIPLES"
+              "title": "01.IntroToDesignPatterns"
             }
           }
         ]
@@ -128,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "LLD.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -138,7 +118,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks for LLD"
             }
           },
           {
@@ -201,43 +181,47 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "083ab1d8c36dbe88",
+  "active": "4191dd89cd790591",
   "lastOpenFiles": [
-    "LLD.md",
-    "PRINCIPLES.md",
-    "CleanCode/01.Programming.md",
-    "DesignPatterns/Notes/01.IntroToDesignPatterns.md",
-    "DesignPatterns/Code/tests/strategyPattern/SimUDuck.test.ts",
-    "DesignPatterns/Code/src/strategyPattern/SimUDuck.ts",
-    "DesignPatterns/Code/tests/strategyPattern",
-    "DesignPatterns/Code/src/strategyPattern",
-    "DesignPatterns/Code/tests/SimUDuck.test.ts",
-    "DesignPatterns/Code/src/SimUDuck.ts",
-    "DesignPatterns/Code/tests/sample.test.ts",
-    "DesignPatterns/Code/src/main.ts",
-    "DesignPatterns/Code/tests",
-    "DesignPatterns/Code/src",
-    "DesignPatterns/Code/node_modules/@esbuild/darwin-arm64/README.md",
-    "DesignPatterns/Code/node_modules/typescript/SECURITY.md",
-    "DesignPatterns/Code/node_modules/typescript/README.md",
-    "DesignPatterns/Code/node_modules/vitest/README.md",
-    "DesignPatterns/Code/node_modules/vitest/LICENSE.md",
-    "DesignPatterns/Code/node_modules/tsx/README.md",
-    "DesignPatterns/Code/node_modules/esbuild/README.md",
-    "DesignPatterns/Code/node_modules/esbuild/LICENSE.md",
-    "DesignPatterns/Code/node_modules/@types/node/README.md",
-    "DesignPatterns/Code/node_modules/vite-node/README.md",
-    "DesignPatterns/Code/node_modules/@vitest/spy/README.md",
-    "DesignPatterns/Code/node_modules/@vitest/mocker/README.md",
-    "DesignPatterns/Code/node_modules/chai/README.md",
-    "DesignPatterns/Code/node_modules/get-tsconfig/README.md",
-    "DesignPatterns/Code/node_modules/fdir/README.md",
-    "DesignPatterns/Code/node_modules/resolve-pkg-maps/README.md",
-    "DesignPatterns/Code/node_modules/undici-types/README.md",
-    "DesignPatterns/Code/node_modules/@types/chai/README.md",
-    "DesignPatterns/Code/node_modules/rollup/README.md",
-    "DesignPatterns/Code/node_modules/pathe/README.md",
-    "DesignPatterns/Code/node_modules/rollup/LICENSE.md",
-    "DesignPatterns/Code/node_modules/@vitest/runner/README.md"
+    "DesignPatterns/Code/jest.config.js",
+    "DesignPatterns/Code/node_modules/caniuse-lite/README.md",
+    "DesignPatterns/Code/node_modules/caniuse-lite/package.json",
+    "DesignPatterns/Code/node_modules/@sinclair/typebox/readme.md",
+    "DesignPatterns/Code/node_modules/@sinclair/typebox/value/package.json",
+    "DesignPatterns/Code/node_modules/@sinclair/typebox/value",
+    "DesignPatterns/Code/node_modules/@sinclair/typebox/type/package.json",
+    "DesignPatterns/Code/node_modules/@sinclair/typebox/type",
+    "DesignPatterns/Code/node_modules/@sinclair/typebox/system/package.json",
+    "DesignPatterns/Code/node_modules/@sinclair/typebox/system",
+    "DesignPatterns/Code/node_modules/@sinclair/typebox/syntax/package.json",
+    "DesignPatterns/Code/node_modules/@sinclair/typebox/syntax",
+    "DesignPatterns/Code/node_modules/@sinclair/typebox/package.json",
+    "DesignPatterns/Code/node_modules/handlebars/release-notes.md",
+    "DesignPatterns/Code/node_modules/ts-jest/TROUBLESHOOTING.md",
+    "DesignPatterns/Code/node_modules/ts-jest/README.md",
+    "DesignPatterns/Code/node_modules/ts-jest/LICENSE.md",
+    "DesignPatterns/Code/node_modules/ts-jest/CONTRIBUTING.md",
+    "DesignPatterns/Code/node_modules/ts-jest/CHANGELOG.md",
+    "DesignPatterns/Code/node_modules/ts-jest/node_modules/semver/README.md",
+    "DesignPatterns/Code/node_modules/jest-snapshot/node_modules/semver/README.md",
+    "DesignPatterns/Code/node_modules/make-dir/node_modules/semver/README.md",
+    "DesignPatterns/Code/node_modules/istanbul-lib-instrument/node_modules/semver/README.md",
+    "DesignPatterns/Code/node_modules/@jest/core/README.md",
+    "DesignPatterns/Code/node_modules/istanbul-reports/README.md",
+    "DesignPatterns/Code/node_modules/ts-jest/node_modules/type-fest/readme.md",
+    "DesignPatterns/Code/node_modules/istanbul-reports/CHANGELOG.md",
+    "DesignPatterns/Code/node_modules/expect/README.md",
+    "DesignPatterns/Code/node_modules/@jest/expect-utils/README.md",
+    "DesignPatterns/Code/node_modules/wrap-ansi/node_modules/ansi-styles/readme.md",
+    "DesignPatterns/Code/node_modules/jest/README.md",
+    "DesignPatterns/Code/node_modules/@jest/reporters/assets/jest_logo.png",
+    "DesignPatterns/Code/node_modules/@jest/types/README.md",
+    "DesignPatterns/Code/node_modules/pretty-format/README.md",
+    "DesignPatterns/Code/node_modules/jest-mock/README.md",
+    "DesignPatterns/Code/node_modules/jest-matcher-utils/README.md",
+    "DesignPatterns/Code/node_modules/jest-util/Readme.md",
+    "DesignPatterns/Code/node_modules/istanbul-reports/lib/html-spa/assets/sort-arrow-sprite.png",
+    "DesignPatterns/Code/node_modules/istanbul-reports/lib/html/assets/sort-arrow-sprite.png",
+    "DesignPatterns/Code/node_modules/istanbul-reports/lib/html/assets/favicon.png"
   ]
 }

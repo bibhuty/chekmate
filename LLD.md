@@ -4,21 +4,18 @@
 - [ ] **Race conditions** → Shared state is protected (atomic ops, locks, immutability) to avoid concurrent corruption.  
 - [ ] **Inconsistent naming** → One concept = one name across modules. No synonyms (e.g., `customerId` vs `clientId`).  
 
-# 📋 Naming Checklist (Collected Questions)
+# 📋 Naming Checklist
 
 ## Intention-Revealing
 - [ ] Does each name clearly reveal **why it exists, what it does, and how it is used**?
-- [ ] Would the name still make sense if comments were stripped out?
-
+- [ ] If a comment exist for that name, would the name still make sense if comments were stripped out?
 ## Avoid Disinformation
 - [ ] Are misleading names avoided (`accountList` when it’s not actually a list)?
 - [ ] Are small/confusing variations avoided (`custId` vs `customerId`)?
-
 ## Meaningful Distinctions
 - [ ] Are meaningless distinctions avoided (`Product`, `ProductInfo`, `ProductData`)?
 - [ ] Are number-series names avoided (`a1`, `a2`, …)?
 - [ ] Are noise words avoided (`the`, `data`, `info`)?
-
 ## Pronounceable & Searchable
 - [ ] Are all names pronounceable (`generationTimestamp` not `genymdhms`)?
 - [ ] Are names searchable (avoid single-letter names outside tiny local scopes)?
@@ -29,8 +26,8 @@
 - [ ] Are interface/implementation names clearly distinguished (`PaymentService` vs `PaymentServiceImpl`)?
 
 ## Classes & Methods
-- [ ] Do classes use nouns or noun phrases?
-- [ ] Do methods use verbs or verb phrases?
+- [ ] Do classes/types use nouns or noun phrases?
+- [ ] Do functions/methods use verbs or verb phrases?
 - [ ] Are overloaded constructors replaced with descriptive static factory methods?
 - [ ] Do methods use clear, unambiguous verbs (`kill`, `abort` instead of slang)?
 
