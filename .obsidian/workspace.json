@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DesignPatterns/Notes/02.KeepingYourObjectsInTheKnow.md",
+                "file": "DesignPatterns/Notes/03.TheDecoratorPattern.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02.KeepingYourObjectsInTheKnow"
+              "title": "03.TheDecoratorPattern"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DesignPatterns/Notes/01.IntroToDesignPatterns.md",
+                "file": "DesignPatterns/Notes/02.KeepingYourObjectsInTheKnow.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01.IntroToDesignPatterns"
+              "title": "02.KeepingYourObjectsInTheKnow"
             }
           }
         ]
@@ -183,19 +183,21 @@
   },
   "active": "4191dd89cd790591",
   "lastOpenFiles": [
+    "DesignPatterns/Notes/02.KeepingYourObjectsInTheKnow.md",
+    "DesignPatterns/Notes/01.IntroToDesignPatterns.md",
+    "DesignPatterns/Notes/03.TheDecoratorPattern.md",
+    "DesignPatterns/Code/tests/DecoratorPattern/StarBuzz.test.ts",
+    "DesignPatterns/Code/tests/DecoratorPattern",
+    "DesignPatterns/Code/src/DecoratorPattern/StarBuzz.ts",
+    "DesignPatterns/Code/src/DecoratorPattern/Starbuzz.ts",
+    "DesignPatterns/Code/src/DecoratorPattern",
     "DesignPatterns/Code/tests/ObserverPattern/pull/WeatherORama.test.ts",
     "DesignPatterns/Code/tests/ObserverPattern/pull",
     "DesignPatterns/Code/tests/ObserverPattern/push/WeatherORama.test.ts",
     "DesignPatterns/Code/tests/ObserverPattern/push",
     "DesignPatterns/Code/src/ObserverPattern/pull/WeatherORama.ts",
-    "DesignPatterns/Code/src/ObserverPattern/pull",
-    "DesignPatterns/Code/src/ObserverPattern/push/WeatherORama.ts",
-    "DesignPatterns/Code/src/ObserverPattern/push",
-    "DesignPatterns/Code/jest.config.js",
     "DesignPatterns/Code/node_modules/caniuse-lite/README.md",
-    "DesignPatterns/Code/node_modules/caniuse-lite/package.json",
     "DesignPatterns/Code/node_modules/@sinclair/typebox/readme.md",
-    "DesignPatterns/Code/node_modules/@sinclair/typebox/value/package.json",
     "DesignPatterns/Code/node_modules/handlebars/release-notes.md",
     "DesignPatterns/Code/node_modules/ts-jest/TROUBLESHOOTING.md",
     "DesignPatterns/Code/node_modules/ts-jest/README.md",
@@ -217,9 +219,6 @@
     "DesignPatterns/Code/node_modules/@jest/reporters/assets/jest_logo.png",
     "DesignPatterns/Code/node_modules/@jest/types/README.md",
     "DesignPatterns/Code/node_modules/pretty-format/README.md",
-    "DesignPatterns/Code/node_modules/jest-mock/README.md",
-    "DesignPatterns/Code/node_modules/jest-matcher-utils/README.md",
-    "DesignPatterns/Code/node_modules/jest-util/Readme.md",
     "DesignPatterns/Code/node_modules/istanbul-reports/lib/html-spa/assets/sort-arrow-sprite.png",
     "DesignPatterns/Code/node_modules/istanbul-reports/lib/html/assets/sort-arrow-sprite.png",
     "DesignPatterns/Code/node_modules/istanbul-reports/lib/html/assets/favicon.png"

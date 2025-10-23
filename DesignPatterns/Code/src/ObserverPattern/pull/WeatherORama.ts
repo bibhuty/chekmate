@@ -26,7 +26,7 @@ export class WeatherStation implements Subject{
         this.notifyObservers();
     }
     notifyObservers(): void {
-        this.observers.forEach(observer => observer.update);
+        this.observers.forEach(observer => observer.update());
     }
 
     registerObserver(o: Observer): void {

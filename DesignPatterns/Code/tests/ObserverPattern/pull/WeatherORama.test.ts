@@ -3,7 +3,7 @@ import {
     ForecastDisplay,
     StatisticsDisplay,
     WeatherStation
-} from "../../../src/ObserverPattern/push/WeatherORama";
+} from "../../../src/ObserverPattern/pull/WeatherORama";
 
 describe('WeatherStation Observer Pattern', () => {
     let station: WeatherStation;
@@ -17,7 +17,7 @@ describe('WeatherStation Observer Pattern', () => {
         station.registerObserver(mockObserver);
         station.setMeasurements(25, 65, 1013);
 
-        expect(mockObserver.update).toHaveBeenCalledWith({ temperature: 25, humidity: 65, pressure: 1013 });
+        expect(mockObserver.update).toHaveBeenCalledWith();
         expect(station.getObserversCount()).toBe(1);
     });
 
