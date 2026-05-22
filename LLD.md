@@ -1,17 +1,17 @@
-# 🔎 Attention to Details
+# 🔎 Attention to Details:
 - [ ] **Abbreviated error handling** → No empty catches, vague logs, or TODOs. Every error path must define recovery or fail-fast.  
 - [ ] **Memory leaks** → All resources (DB connections, sockets, file handles, listeners) are closed or released.  
 - [ ] **Race conditions** → Shared state is protected (atomic ops, locks, immutability) to avoid concurrent corruption.  
 - [ ] **Inconsistent naming** → One concept = one name across modules. No synonyms (e.g., `customerId` vs `clientId`).  
 
-# 📋 Naming Checklist
+# 📋 Naming Checklist:
 
 ## Intention-Revealing
 - [ ] Does each name clearly reveal **why it exists, what it does, and how it is used**?
 - [ ] If a comment exist for that name, would the name still make sense if comments were stripped out?
 ## Avoid Disinformation
 - [ ] Are misleading names avoided (`accountList` when it’s not actually a list)?
-- [ ] Are small/confusing variations avoided (`custId` vs `customerId`)?
+- [ ] Are small/confusing variations avoided (`custId` vs `customerId`, `getAccount()` vs `getAccounts()`)?
 ## Meaningful Distinctions
 - [ ] Are meaningless distinctions avoided (`Product`, `ProductInfo`, `ProductData`)?
 - [ ] Are number-series names avoided (`a1`, `a2`, …)?
@@ -33,7 +33,7 @@
 
 ## Consistency
 - [ ] Is one word reserved for one concept only (e.g., choose `fetch` OR `get` OR `retrieve`)?
-- [ ] Is the same word avoided for different concepts (don’t use `add` for both concatenation and collection insertion)?
+- [ ] Is the same word avoided for different concepts (e.g. don’t use `add` for both concatenation and collection insertion)?
 
 ## Context & Domain
 - [ ] Is the right balance struck between **solution domain names** (CS terms) and **problem domain names** (business terms)?
@@ -44,41 +44,25 @@
 ---
 
 
-# Clean Code – Chapter 3 Checklist (Functions)
-
-> *Master programmers think of systems as stories to be told rather than programs to be written.*
-
----
+# 🧩 Functions Checklist:
 
 ## Small!
 - [ ] Functions are ≤ 20 lines.
 - [ ] Blocks within `if` / `else` / `while` are a single line (delegating to another function).
-- [ ] Indentation does not exceed 1–2 levels.
-
----
-
+- [ ] Indent level does not exceed 1–2 levels.
 ## Do One Thing
 - [ ] Each function does only one thing.
 - [ ] All statements in the body are at the same level of abstraction.
 - [ ] Function bodies read like a **table of contents** (TOC).
 - [ ] If you can extract a sub-function with a meaningful new name, the original was doing more than one thing.
-
----
-
 ## Switch Statements / Multi-if Chains
 - [ ] No repeated `switch` or multi-if chains.
 - [ ] Polymorphism or strategy objects bury each case in a low-level class.
 - [ ] High-level orchestration remains closed to modification (OCP).
-
----
-
 ## Descriptive Names
 - [ ] Functions have descriptive names; longer and explicit is better than short and cryptic.
 - [ ] Function names use readable multi-word conventions (camelCase / PascalCase).
 - [ ] Prefer a descriptive function name over a descriptive comment.
-
----
-
 ## Function Arguments
 - [ ] Niladic (0 args) or Monadic (1 arg) preferred.
 - [ ] Dyadic (2 args) allowed only when natural (e.g. `assertExpectedEqualsActual`).
@@ -89,36 +73,23 @@
 - [ ] No **flag arguments** (boolean switches that change behavior).
 - [ ] No **output arguments**; functions return values instead.
 - [ ] Input arguments are not mutated (unless the function name clearly advertises in-place mutation).
-
----
-
 ## Side Effects
 - [ ] No hidden side effects (no unexpected state changes).
 - [ ] If mutation is required, it happens only on the owning object and is obvious from the function name.
 - [ ] No “double-take” code (no surprises that force rereading).
-
----
-
 ## Command–Query Separation
 - [ ] Functions either **do something** (command) or **answer something** (query).
 - [ ] No mixing of command + query in the same function.
 
----
-
 ## Exceptions
 - [ ] Functions do not return error codes (no `if (deletePage(page) == E_OK)`).
 - [ ] Error handling is its own concern; a function that handles errors does nothing else.
-- [ ] No centralized `ErrorCode` enum (dependency magnet).
+- [ ] No centralised `ErrorCode` enum (dependency magnet).
 - [ ] Domain errors are modeled with typed exceptions (or typed results), not codes.
-
----
 
 ## Temporal Coupling
 - [ ] APIs do not require methods to be called in a specific order.
 - [ ] If sequencing is needed, enforce it with constructors, factories, or state machines.
-
----
-
 ## Structured Programming
 - [ ] Functions and blocks have one entry and one exit.
 - [ ] Only one `return`, no `break` / `continue` in loops — except in very small functions where multiple exits are clearer.
