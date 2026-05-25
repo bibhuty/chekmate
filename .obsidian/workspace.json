@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 556.5
   },
   "right": {
     "id": "a43b5353ffa892ed",
@@ -169,19 +169,19 @@
   },
   "active": "1d60db96c80439c9",
   "lastOpenFiles": [
+    "CleanCode/02.MeaningfulNames.md",
+    "CleanCode/01.Programming.md",
+    "HLD.md",
     "DDIA/01.Reliable, Scalable and Maintainable Applications.md",
-    "README.md",
     "LLD.md",
+    "README.md",
     "DesignPatterns/Notes/03.TheDecoratorPattern.md",
     "DesignPatterns/Notes/02.KeepingYourObjectsInTheKnow.md",
     "DDIA",
-    "CleanCode/02.MeaningfulNames.md",
     "CleanCode/03.Functions.md",
     "CleanCode/04.Comments.md",
     "DesignPatterns/Notes/01.IntroToDesignPatterns.md",
     "PRINCIPLES.md",
-    "HLD.md",
-    "CleanCode/01.Programming.md",
     "DesignPatterns/Code/tests/DecoratorPattern/StarBuzz.test.ts",
     "DesignPatterns/Code/tests/DecoratorPattern",
     "DesignPatterns/Code/src/DecoratorPattern/StarBuzz.ts",
