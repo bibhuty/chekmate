@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CleanCode/02.MeaningfulNames.md",
+                "file": "DDIA/02.Data Models and Query Languages.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02.MeaningfulNames"
+              "title": "02.Data Models and Query Languages"
             }
           }
         ]
@@ -169,10 +169,11 @@
   },
   "active": "30eab2bf9a297d5b",
   "lastOpenFiles": [
+    "DDIA/01.Reliable, Scalable and Maintainable Applications.md",
+    "DDIA/02.Data Models and Query Languages.md",
+    "CleanCode/02.MeaningfulNames.md",
     "CleanCode/01.Programming.md",
     "CleanCode/TODO.md",
-    "CleanCode/02.MeaningfulNames.md",
-    "DDIA/01.Reliable, Scalable and Maintainable Applications.md",
     "HLD.md",
     "LLD.md",
     "README.md",
@@ -204,7 +205,6 @@
     "DesignPatterns/Code/node_modules/jest-snapshot/node_modules/semver/README.md",
     "DesignPatterns/Code/node_modules/make-dir/node_modules/semver/README.md",
     "DesignPatterns/Code/node_modules/istanbul-lib-instrument/node_modules/semver/README.md",
-    "DesignPatterns/Code/node_modules/@jest/core/README.md",
     "DesignPatterns/Code/node_modules/@jest/reporters/assets/jest_logo.png",
     "DesignPatterns/Code/node_modules/istanbul-reports/lib/html-spa/assets/sort-arrow-sprite.png",
     "DesignPatterns/Code/node_modules/istanbul-reports/lib/html/assets/sort-arrow-sprite.png",
