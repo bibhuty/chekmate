@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DDIA/02.Data Models and Query Languages.md",
+                "file": "CleanCode/04.Comments.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02.Data Models and Query Languages"
+              "title": "04.Comments"
             }
           }
         ]
@@ -167,10 +167,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6def14c0f8b544ef",
+  "active": "083ab1d8c36dbe88",
   "lastOpenFiles": [
-    "DDIA/01.Reliable, Scalable and Maintainable Applications.md",
     "DDIA/02.Data Models and Query Languages.md",
+    "DDIA/01.Reliable, Scalable and Maintainable Applications.md",
     "CleanCode/04.Comments.md",
     "CleanCode/01.Programming.md",
     "CleanCode/TODO.md",
