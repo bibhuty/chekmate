@@ -11,5 +11,6 @@
 - Quadtree
 #### Papers:
 - Google's Bigtable Paper
+- Google's Dremel Paper
 
 #### Notes based on analogy of real life scenarios using NotebookLLM:

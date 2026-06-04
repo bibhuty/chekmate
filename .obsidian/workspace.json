@@ -49,7 +49,8 @@
               "title": "05.Formatting"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -106,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 556.5
+    "width": 556.5,
+    "collapsed": true
   },
   "right": {
     "id": "a43b5353ffa892ed",
@@ -195,7 +197,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5b77e3e852941285",
+  "active": "54556f6c3c9b3e02",
   "lastOpenFiles": [
     "DDIA/TODO.md",
     "DDIA/03. Storage and Retrieval.md",
