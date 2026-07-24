@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DDIA/07. Transactions.md",
+                "file": "DDIA/08. The Trouble with Distributed Systems.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "07. Transactions"
+              "title": "08. The Trouble with Distributed Systems"
             }
           }
         ]
@@ -170,6 +170,7 @@
   "active": "32456ecf8dc0a756",
   "lastOpenFiles": [
     "DDIA/07. Transactions.md",
+    "DDIA/08. The Trouble with Distributed Systems.md",
     "DDIA/06. Partitioning.md",
     "DDIA/TODO.md",
     "DDIA/05. Replication.md",
@@ -204,7 +205,6 @@
     "DesignPatterns/Code/node_modules/@sinclair/typebox/readme.md",
     "DesignPatterns/Code/node_modules/handlebars/release-notes.md",
     "DesignPatterns/Code/node_modules/ts-jest/TROUBLESHOOTING.md",
-    "DesignPatterns/Code/node_modules/ts-jest/README.md",
     "DesignPatterns/Code/node_modules/@jest/reporters/assets/jest_logo.png",
     "DesignPatterns/Code/node_modules/istanbul-reports/lib/html-spa/assets/sort-arrow-sprite.png",
     "DesignPatterns/Code/node_modules/istanbul-reports/lib/html/assets/sort-arrow-sprite.png",
