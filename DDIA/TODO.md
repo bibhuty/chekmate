@@ -12,6 +12,7 @@
 #### Papers:
 - Google's Bigtable Paper
 - Google's Dremel Paper
+- Google's Chubby Lock Service
 #### Topics:
 - Conflict-free replicated datatypes
 - Mergeable persistent data structure
