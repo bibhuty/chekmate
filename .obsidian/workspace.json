@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "35a1e38949a9531c",
+        "id": "ccc37fc915068eca",
         "type": "tabs",
         "children": [
           {
-            "id": "32070dd750672f6c",
+            "id": "bc7d7f6b1cc9902b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DDIA/09. Consistency and Consensus.md",
+                "file": "DDIA/10. Batch Processing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09. Consistency and Consensus"
+              "title": "10. Batch Processing"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -167,9 +169,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "083ab1d8c36dbe88",
+  "active": "bc7d7f6b1cc9902b",
   "lastOpenFiles": [
     "DDIA/TODO.md",
+    "DDIA/10. Batch Processing.md",
     "DDIA/09. Consistency and Consensus.md",
     "DDIA/05. Replication.md",
     "Untitled.base",
