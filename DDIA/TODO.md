@@ -25,5 +25,7 @@
 	- Fowler-Noll-Vo
 - Zookeeper
 - Pagerank
+- DBLog Algorithm
+- HyperLogLog
 
 #### Notes based on analogy of real life scenarios using NotebookLLM:
