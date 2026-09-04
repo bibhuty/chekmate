@@ -1,7 +1,7 @@
 ## 1. Basics & Math
 ### Basic Math (Extraction, GCD/HCF, Primes)
 - [x] **M1:** Pow(x, n) `[LC150 / Striver]`
-- [ ] **M2:** Count Primes `[Striver]`
+- [x] **M2:** Count Primes `[Striver]`
 - [ ] **H1:** Basic Calculator `[LC150]`
 
 ### Basic Hashing (Maps, Frequency arrays)

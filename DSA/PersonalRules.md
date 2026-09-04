@@ -13,20 +13,35 @@
 - **Redundant guards**: `if (start >= end) return;` right before `while (start < end)` — the loop handles it.
 - **Swap via temp**: never `a = f(b)` then `b = f(a)` — b is already overwritten. Always save both before assigning.
 
-## Numeric Limits (mental model)
+## Numeric Limits & Traps (Mental Model)
 
-**Integers (Exact Math)**
-- `2^10 ≈ 10^3`, so `2^20 ≈ 10^6`, `2^30 ≈ 10^9`
-- `int` max ≈ `2.1 × 10^9` (`2^31 - 1`)
-- `long` max ≈ `9.2 × 10^18` (`2^63 - 1`)
-- Rule of thumb: if a sum/product could exceed ~`10^9`, use `long`.
+### 1. Integers (Exact Math)
+- **The 10-3 Rule:** `2^10 ≈ 10^3`, `2^20 ≈ 10^6`, `2^30 ≈ 10^9`
+- **`int` (32-bit):** Max ≈ `2.1 × 10^9` (`2^31 - 1`).
+- **`long` (64-bit):** Max ≈ `9.2 × 10^18` (`2^63 - 1`).
 
-**Floating Point (Approximations)**
-- `float` (32-bit): ~7 significant decimal digits. Max ≈ `3.4 × 10^38`
-- `double` (64-bit): ~15 significant decimal digits. Max ≈ `1.8 × 10^308`
-- Rule of thumb: Default to `double` for all general math (Java's `Math` library expects/returns `double`).
-- Memory override: Use `float` ONLY when storing massive arrays (e.g., millions of coordinates, ML weights) to cut RAM usage in half.
-- 🚨 Danger zone: NEVER use `float` or `double` for money or exact decimal arithmetic (e.g., `0.1 + 0.2 = 0.30000000000000004`). Use `long` (store as cents) or `BigDecimal`.
+**🚨 The Integer Traps:**
+- **The Upgrade Rule:** If a sum, product, or factorial could exceed `10^9`, cast to `long` *before* the math happens (e.g., `long j = (long) i * i;`).
+- **The `MIN_VALUE` Trap:** `Integer.MIN_VALUE` is `-2147483648`, but `MAX_VALUE` is `2147483647`. `Math.abs(Integer.MIN_VALUE)` overflows and remains negative. Always cast to `long` first!
+- **The Modulo Hint:** If a problem says "Return the answer modulo 10^9 + 7", it's a massive hint that the intermediate steps will overflow even a `long`.
+
+### 2. Floating Point (Approximations)
+- **`float` (32-bit):** ~7 significant decimal digits. Max ≈ `3.4 × 10^38`.
+- **`double` (64-bit):** ~15 significant decimal digits. Max ≈ `1.8 × 10^308`.
+
+**💡 When to use what:**
+- **Default:** Always use `double` for general math (Java's `Math` library expects/returns `double`).
+- **Memory Override:** Use `float` ONLY when storing massive matrices (e.g., millions of coordinates, ML weights) to cut RAM usage in half.
+
+**🚨 The Floating Point Traps:**
+- **The Equality Trap:** NEVER compare floats using `==` (e.g., `0.1 * 3 == 0.3` evaluates to `false`). Always use an epsilon: `Math.abs(a - b) < 1e-9`.
+- **The Money Trap:** NEVER use `float` or `double` for currency or exact decimal arithmetic (`0.1 + 0.2 = 0.30000000000000004`). Store money as `long` (in cents) or use `BigDecimal`.
+
+### 3. Arrays & Limits (CP & Interviews)
+- **True Max Array Size (Memory):** A standard 256MB limit holds about `6.5 × 10^7` primitive `int`s. A safe upper bound for a 1D array before `OutOfMemoryError` is `~5 × 10^7`.
+- **The Object Overhead Trap:** An `Integer[]` takes 4-5x more memory than an `int[]`. Always use primitive arrays (`int[]`, `long[]`, `boolean[]`) for massive datasets.
+- **The 10^5 Rule (Time):** If a problem states `N ≤ 10^5` (or `2 × 10^5`), it is a hint about *Time*, not Memory. Modern judges process `~10^8` ops/sec. `N = 10^5` strictly requires an `O(N)` or `O(N log N)` solution. `O(N^2)` will TLE.
+
 ## Java Utilities
 
 - `Arrays.toString(arr)` — pretty print 1D array
