@@ -5,7 +5,7 @@
 - [ ] **H1:** Basic Calculator `[LC150]`
 
 ### Basic Hashing (Maps, Frequency arrays)
-- [ ] **M1:** Group Anagrams `[LC75 / LC150 / Striver]`
+- [x] **M1:** Group Anagrams `[LC75 / LC150 / Striver]`
 - [ ] **M2:** Longest Consecutive Sequence `[LC75 / LC150 / Striver]`
 - [ ] **H1:** Substring with Concatenation of All Words `[LC150]`
 

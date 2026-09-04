@@ -47,7 +47,9 @@
 - `Arrays.toString(arr)` — pretty print 1D array
 - `Arrays.deepToString(arr)` — pretty print 2D+ array
 - `System.arraycopy(src, srcPos, dest, destPos, len)` — fastest array copy
-- - `ArrayDeque` not `ArrayDequeue` — no such class, silent typo until compile.
+- `ArrayDeque` not `ArrayDequeue` — no such class, silent typo until compile.
+- **`StringBuilder` over `StringBuffer`**: Always use `StringBuilder` in interviews. `StringBuffer` is synchronized (thread-safe) which adds unnecessary execution overhead.
+- **`map.computeIfAbsent(key, k -> new ArrayList<>()).add(val)`**: The absolute cleanest way to handle grouping/adjacency lists. Replaces the multi-line `putIfAbsent` + `get` + `add` pattern with a single, highly optimized line.
 
 ## Reading Constraints Carefully
 

@@ -171,6 +171,8 @@
   },
   "active": "86c5f5c71fac2650",
   "lastOpenFiles": [
+    "DSA/_01_BasicsAndMath/Hashing/GroupAnagrams.java",
+    "DSA/_01_BasicsAndMath/Hashing/GroupAnagrams.md",
     "DSA/_01_BasicsAndMath/BasicMath/theory/BinaryExponentiation.md",
     "DSA/_01_BasicsAndMath/BasicMath/theory/SieveOfEratosthenes.md",
     "DSA/out/production/DSA/Main.class",
@@ -205,8 +207,6 @@
     "DesignPatterns/Code/node_modules/@babel/plugin-syntax-import-meta/README.md",
     "DesignPatterns/Code/node_modules/cliui/node_modules/strip-ansi/readme.md",
     "DesignPatterns/Code/node_modules/cliui/node_modules/string-width/readme.md",
-    "DesignPatterns/Code/node_modules/jest-worker/node_modules/supports-color/readme.md",
-    "DesignPatterns/Code/node_modules/cliui/node_modules/wrap-ansi/readme.md",
     "DesignPatterns/Code/node_modules/@jest/reporters/assets/jest_logo.png",
     "DesignPatterns/Code/node_modules/istanbul-reports/lib/html-spa/assets/sort-arrow-sprite.png",
     "DesignPatterns/Code/node_modules/istanbul-reports/lib/html/assets/sort-arrow-sprite.png",
