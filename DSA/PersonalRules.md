@@ -42,14 +42,22 @@
 - **The Object Overhead Trap:** An `Integer[]` takes 4-5x more memory than an `int[]`. Always use primitive arrays (`int[]`, `long[]`, `boolean[]`) for massive datasets.
 - **The 10^5 Rule (Time):** If a problem states `N ≤ 10^5` (or `2 × 10^5`), it is a hint about *Time*, not Memory. Modern judges process `~10^8` ops/sec. `N = 10^5` strictly requires an `O(N)` or `O(N log N)` solution. `O(N^2)` will TLE.
 
-## Java Utilities
-
+## Java Utilities & Collections Traps
 - `Arrays.toString(arr)` — pretty print 1D array
 - `Arrays.deepToString(arr)` — pretty print 2D+ array
 - `System.arraycopy(src, srcPos, dest, destPos, len)` — fastest array copy
 - `ArrayDeque` not `ArrayDequeue` — no such class, silent typo until compile.
 - **`StringBuilder` over `StringBuffer`**: Always use `StringBuilder` in interviews. `StringBuffer` is synchronized (thread-safe) which adds unnecessary execution overhead.
 - **`map.computeIfAbsent(key, k -> new ArrayList<>()).add(val)`**: The absolute cleanest way to handle grouping/adjacency lists. Replaces the multi-line `putIfAbsent` + `get` + `add` pattern with a single, highly optimized line.
+
+### Sets & Maps (Syntax & Performance)
+- **`HashSet` vs `TreeSet`:**
+  - `HashSet`: Backed by a Hash Table. `add()`, `remove()`, and `contains()` are average **$O(1)$**. Unordered. **Always use this if a problem demands $O(N)$ time complexity.**
+  - `TreeSet`: Backed by a Red-Black Tree. `add()`, `remove()`, and `contains()` are **$O(\log N)$**. Maintains sorted order.
+- **Set Syntax Trap:** Sets just hold values. Use `set.contains(value)`. Never write `set.containsKey(value)` (compile error).
+- **Map Syntax Trap:**
+  - `map.containsKey(key)` is **$O(1)$**.
+  - `map.containsValue(value)` is **$O(N)$** because it must linearly scan the values collection. Never use this inside a loop if you care about performance.
 
 ## Reading Constraints Carefully
 
