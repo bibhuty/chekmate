@@ -6,12 +6,13 @@
 
 ### Basic Hashing (Maps, Frequency arrays)
 - [x] **M1:** Group Anagrams `[LC75 / LC150 / Striver]`
-- [ ] **M2:** Longest Consecutive Sequence `[LC75 / LC150 / Striver]`
+- [x] **M2:** Longest Consecutive Sequence `[LC75 / LC150 / Striver]`
 - [ ] **H1:** Substring with Concatenation of All Words `[LC150]`
 
 ### Bit Manipulation (Operators, XOR properties, Power sets)
-- [ ] **M1:** Single Number II `[LC150 / Striver]`
-- [ ] **M2:** Bitwise AND of Numbers Range `[LC150]`
+- [x] **M1:** Single Number II `[LC150 / Striver]`
+- [x] **M2:** Single Number III `[Striver]`
+- [ ] **M3:** Bitwise AND of Numbers Range `[LC150]`
 - [ ] **H1:** Divide Two Integers `[LC150 / Striver]`
 
 ### Randomization & Probability (Google SWE Favorite)
