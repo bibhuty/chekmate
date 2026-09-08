@@ -12,7 +12,7 @@
 ### Bit Manipulation (Operators, XOR properties, Power sets)
 - [x] **M1:** Single Number II `[LC150 / Striver]`
 - [x] **M2:** Single Number III `[Striver]`
-- [ ] **M3:** Bitwise AND of Numbers Range `[LC150]`
+- [x] **M3:** Bitwise AND of Numbers Range `[LC150]`
 - [ ] **H1:** Divide Two Integers `[LC150 / Striver]`
 
 ### Randomization & Probability (Google SWE Favorite)
