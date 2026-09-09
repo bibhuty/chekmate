@@ -11,8 +11,7 @@
 - **ALWAYS DRY RUN WITH SIMPLE USE CASES.**
 - **Dead conditions**: after writing branching logic, check if outer loop/guard conditions make any branch redundant. Example: `while(write >= 0)` + `read1 < 0` already implies `read2 >= 0`.
 - **Redundant guards**: `if (start >= end) return;` right before `while (start < end)` — the loop handles it.
-- **Swap via temp**: never `a = f(b)` then `b = f(a)` — b is already overwritten. Always save both before assigning.
-
+- **Swap via temp**: never `a = f(b)` then `b = f(a)` — b is already overwritten. Always save both before assigning. *(Crucial for parallel DP/Kadane states like tracking min/max simultaneously).*
 ## Numeric Limits & Traps (Mental Model)
 
 ### 1. Integers (Exact Math)

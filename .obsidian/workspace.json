@@ -171,6 +171,8 @@
   },
   "active": "e6d8abb3d5a5e5f7",
   "lastOpenFiles": [
+    "DSA/_02_Arrays/KadanesAlgorithm/MaxProductSubarray.md",
+    "DSA/_02_Arrays/KadanesAlgorithm/MaxProductSubarray.java",
     "DSA/_02_Arrays/KadanesAlgorithm/MaximumSubarray.java",
     "DSA/_02_Arrays/KadanesAlgorithm/theory/KadanesAlgorithm.md",
     "DSA/_02_Arrays/KadanesAlgorithm/theory/KadanesAlgorithm",
@@ -186,8 +188,6 @@
     "DSA/_02_Arrays/PrefixSum",
     "DSA/_02_Arrays/MooresVoting",
     "DSA/_02_Arrays/DutchNationalFlagAlgorithm",
-    "DSA/_02_Arrays/KadanesAlgorithm/theory",
-    "DSA/_02_Arrays/KadanesAlgorithm",
     "DSA/_01_BasicsAndMath/BitManipulation/BitWiseAndOfNumberRange.md",
     "DSA/_01_BasicsAndMath/BitManipulation/SingleNumberIII.md",
     "DSA/_01_BasicsAndMath/BitManipulation/SingleNumberII.md",

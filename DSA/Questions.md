@@ -18,7 +18,6 @@
 ### Randomization & Probability (Google SWE Favorite)
 - [ ] **M1:** Shuffle an Array `[Striver]`
 - [ ] **M2:** Random Pick with Weight `[Striver]`
-- [ ] **M3:** Insert Delete GetRandom O(1) `[LC150]`
 - [ ] **H1:** Implement Rand10() Using Rand7() `[Striver]`
 
 ---
@@ -26,7 +25,7 @@
 ## 2. Arrays
 ### Kadane's Algorithm (Maximum Subarray Sum)
 - [x] **M1:** Maximum Subarray `[LC150 / Striver]`
-- [ ] **M2:** Maximum Product Subarray `[LC75 / Striver]`
+- [x] **M2:** Maximum Product Subarray `[LC75 / Striver]`
 - [ ] **H1:** Maximum Sum Circular Subarray `[LC150]`
 
 ### Dutch National Flag Algorithm (Sorting 0s, 1s, 2s)
