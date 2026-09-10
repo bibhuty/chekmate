@@ -1,4 +1,4 @@
-package _02_Arrays.DutchNationalFlagAlgorithm.theory;
+package _02_Arrays.Sorting.theory;
 
 public class DutchNationalFlag {
 

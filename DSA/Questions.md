@@ -28,9 +28,9 @@
 - [x] **M2:** Maximum Product Subarray `[LC75 / Striver]`
 - [ ] **H1:** Maximum Sum Circular Subarray `[LC150]`
 
-### Dutch National Flag Algorithm (Sorting 0s, 1s, 2s)
+### Sorting
 - [x] **M1:** Sort Colors `[Striver]`
-- [ ] **M2:** H-Index `[LC150]`
+- [x] **M2:** H-Index `[LC150]`
 - [ ] **H1:** First Missing Positive `[LC150]`
 
 ### Moore’s Voting & Divide/Conquer
