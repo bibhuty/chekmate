@@ -34,8 +34,8 @@
 - [ ] **H1:** First Missing Positive `[LC150]`
 
 ### Moore’s Voting & Divide/Conquer
-- [ ] **M1:** Majority Element `[LC75 / LC150 / Striver]`
-- [ ] **M2:** Majority Element II `[LC150 / Striver]`
+- [x] **M1:** Majority Element `[LC75 / LC150 / Striver]`
+- [x] **M2:** Majority Element II `[LC150 / Striver]`
 - [ ] **H1:** Reverse Pairs `[Striver]`
 - [ ] **H2:** Count of Smaller Numbers After Self `[Striver]` *(Essential for D&C / Fenwick ponderings)*
 

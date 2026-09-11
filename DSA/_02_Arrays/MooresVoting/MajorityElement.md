@@ -24,3 +24,4 @@ public class MajorityElement {
         return candidate;
     }
 }
+```

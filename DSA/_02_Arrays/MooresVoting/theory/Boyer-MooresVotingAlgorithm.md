@@ -40,3 +40,4 @@ public class BoyerMooresVotingAlgorithm {
         return count > n / 2 ? candidate : null;
     }
 }
+```
