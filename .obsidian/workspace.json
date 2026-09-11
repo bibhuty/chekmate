@@ -171,9 +171,9 @@
   },
   "active": "e6d8abb3d5a5e5f7",
   "lastOpenFiles": [
-    "DSA/_02_Arrays/PrefixSum/SubarraySumEqualsK.md",
     "DSA/_02_Arrays/PrefixSum/theory/PrefixSum.md",
     "DSA/_02_Arrays/PrefixSum/theory",
+    "DSA/_02_Arrays/PrefixSum/SubarraySumEqualsK.md",
     "DSA/_02_Arrays/PrefixSum/SubarraySumEqualsK.java",
     "DSA/_02_Arrays/MooresVoting/MajorityElementII.md",
     "DSA/_02_Arrays/MooresVoting/MajorityElementII.java",
@@ -206,7 +206,6 @@
     "DSA/_01_BasicsAndMath/BasicMath/theory/BinaryExponentiation.md",
     "DSA/_01_BasicsAndMath/BasicMath/theory/SieveOfEratosthenes.md",
     "DSA/out/production/DSA/_01_BasicsAndMath/BasicMath/PowerOfXRaiseToThePowerN.md",
-    "DSA/out/production/DSA/Questions.md",
     "DesignPatterns/Code/node_modules/@jest/reporters/assets/jest_logo.png",
     "DesignPatterns/Code/node_modules/istanbul-reports/lib/html-spa/assets/sort-arrow-sprite.png",
     "DesignPatterns/Code/node_modules/istanbul-reports/lib/html/assets/sort-arrow-sprite.png",

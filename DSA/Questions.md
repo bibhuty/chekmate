@@ -40,7 +40,7 @@
 - [ ] **H2:** Count of Smaller Numbers After Self `[Striver]` *(Essential for D&C / Fenwick ponderings)*
 
 ### Prefix Sums
-- [ ] **M1:** Subarray Sum Equals K `[LC150 / Striver]`
+- [x] **M1:** Subarray Sum Equals K `[LC150 / Striver]`
 - [ ] **M2:** Find Pivot Index `[LC75]`
 - [ ] **H1:** Count Subarrays with Given XOR `[Striver]`
 
