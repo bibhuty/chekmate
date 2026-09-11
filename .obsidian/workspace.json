@@ -171,6 +171,8 @@
   },
   "active": "e6d8abb3d5a5e5f7",
   "lastOpenFiles": [
+    "DSA/_02_Arrays/PrefixSum/PivotIndex.md",
+    "DSA/_02_Arrays/PrefixSum/PivotIndex.java",
     "DSA/_02_Arrays/PrefixSum/theory/PrefixSum.md",
     "DSA/_02_Arrays/PrefixSum/theory",
     "DSA/_02_Arrays/PrefixSum/SubarraySumEqualsK.md",
@@ -187,7 +189,6 @@
     "DSA/_02_Arrays/Sorting/theory",
     "DSA/_02_Arrays/Sorting/HIndex.md",
     "DSA/_02_Arrays/Sorting/HIndex.java",
-    "DSA/_02_Arrays/Sorting",
     "DSA/_02_Arrays/DutchNationalFlagAlgorithm/HIndex.md",
     "DSA/_02_Arrays/DutchNationalFlagAlgorithm/theory/DutchNationalFlag.md",
     "DSA/_02_Arrays/KadanesAlgorithm/MaxProductSubarray.md",

@@ -41,7 +41,7 @@
 
 ### Prefix Sums
 - [x] **M1:** Subarray Sum Equals K `[LC150 / Striver]`
-- [ ] **M2:** Find Pivot Index `[LC75]`
+- [x] **M2:** Find Pivot Index `[LC75]`
 - [ ] **H1:** Count Subarrays with Given XOR `[Striver]`
 
 ### Two Pointers (Opposite directions)
