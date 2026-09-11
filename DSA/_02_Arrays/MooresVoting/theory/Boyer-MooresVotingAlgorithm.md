@@ -41,3 +41,19 @@ public class BoyerMooresVotingAlgorithm {
     }
 }
 ```
+
+## Extending the Algorithm: Occurrences > N / k
+The standard algorithm finds $> N / 2$, but the math scales cleanly to find elements occurring strictly $> N / k$ times (e.g., $N / 3$, $N / 4$).
+
+**The Core Rule:** If an element must appear $> N / k$ times, there can be at most **$k - 1$** valid majority elements.
+* $> N / 2$ means at most **1** winner.
+* $> N / 3$ means at most **2** winners.
+* $> N / 4$ means at most **3** winners.
+
+**The Scaled Battle Royale:**
+Instead of tracking 1 King of the Hill, you track $k - 1$ hills (e.g., `candidate1`, `candidate2` and `count1`, `count2`).
+1. **Reinforce:** If a soldier matches an existing candidate, they join that hill (`++count`).
+2. **Claim:** If they don't match, they claim the first empty hill they find (`count == 0`). *(Trap: Ensure they don't claim an empty hill if they already rule another!)*
+3. **k-Way Mutual Destruction:** If a soldier arrives, doesn't match any existing faction, and *all* $k - 1$ hills are occupied, they throw a grenade. The current soldier dies, and **one soldier from every single hill dies** (decrement all $k - 1$ counts). This perfectly eliminates distinct groups of $k$ elements.
+
+**Phase 2 remains mandatory:** You must manually count the occurrences of all $k - 1$ surviving candidates to verify which ones actually cross the $> N / k$ threshold.
