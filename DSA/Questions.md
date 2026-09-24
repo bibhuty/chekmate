@@ -45,7 +45,7 @@
 - [ ] **H1:** Count Subarrays with Given XOR `[Striver]`
 
 ### Two Pointers (Opposite directions)
-- [ ] **M1:** 3Sum `[LC75 / LC150 / Striver]`
+- [x] **M1:** 3Sum `[LC75 / LC150 / Striver]`
 - [ ] **M2:** Container With Most Water `[LC75 / LC150]`
 - [ ] **H1:** Trapping Rain Water `[LC150 / Striver]`
 
