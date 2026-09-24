@@ -47,8 +47,10 @@
 - `System.arraycopy(src, srcPos, dest, destPos, len)` — fastest array copy
 - `ArrayDeque` not `ArrayDequeue` — no such class, silent typo until compile.
 - **`StringBuilder` over `StringBuffer`**: Always use `StringBuilder` in interviews. `StringBuffer` is synchronized (thread-safe) which adds unnecessary execution overhead.
-- **`map.computeIfAbsent(key, k -> new ArrayList<>()).add(val)`**: The absolute cleanest way to handle grouping/adjacency lists. Replaces the multi-line `putIfAbsent` + `get` + `add` pattern with a single, highly optimized line.
-
+- **`map.computeIfAbsent(key, k -> new ArrayList<>()).add(val)`**: The absolute cleanest way to handle grouping/adjacency lists. Replaces the multi-line `putIfAbsent` + `get` + `add` pattern with a single line.
+- **Generics Invariance Trap**: `new ArrayList<ArrayList<Integer>>()` is an illegal type mismatch and will not compile. You must use `new ArrayList<List<Integer>>()` or just rely on the diamond operator `new ArrayList<>()`.
+- **Native List Deduplication**: A `Set<List<Integer>>` automatically deduplicates identical lists because Java's `List.equals()` evaluates both the elements and their order. Calling `Collections.sort(list)` before adding it to the Set guarantees duplicate combinations natively overwrite each other.
+- **Quick List Initialization**: Use `Arrays.asList(a, b, c)` to instantly create a populated list in one line (e.g., for returning triplets) rather than writing multiple `.add()` statements. *(Note: This returns a fixed-size list).*
 ### Sets & Maps (Syntax & Performance)
 - **`HashSet` vs `TreeSet`:**
   - `HashSet`: Backed by a Hash Table. `add()`, `remove()`, and `contains()` are average **$O(1)$**. Unordered. **Always use this if a problem demands $O(N)$ time complexity.**
