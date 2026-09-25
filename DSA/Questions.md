@@ -55,7 +55,7 @@
 - [ ] **H1:** Game of Life `[LC150]`
 
 ### Interval Overlaps (Merge, Insert)
-- [ ] **M1:** Merge Intervals `[LC150 / Striver]`
+- [x] **M1:** Merge Intervals `[LC150 / Striver]`
 - [ ] **M2:** Non-overlapping Intervals `[LC75 / Striver]`
 - [ ] **H1:** Insert Interval `[LC75 / LC150 / Striver]`
 
