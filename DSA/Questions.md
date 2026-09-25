@@ -46,7 +46,7 @@
 
 ### Two Pointers (Opposite directions)
 - [x] **M1:** 3Sum `[LC75 / LC150 / Striver]`
-- [ ] **M2:** Container With Most Water `[LC75 / LC150]`
+- [x] **M2:** Container With Most Water `[LC75 / LC150]`
 - [ ] **H1:** Trapping Rain Water `[LC150 / Striver]`
 
 ### Matrix Manipulation (Traversal, Rotation, Zeroing)

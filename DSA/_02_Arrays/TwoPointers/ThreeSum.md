@@ -88,3 +88,65 @@ class Solution {
     }
 }
 ```
+
+### Why 3Sum Output Space is $O(N^2)$ (Mathematical Intuition)
+
+To understand why the maximum number of valid, unique triplets in an array of size $N$ is bounded at $O(N^2)$, we can model the worst-case scenario using an Arithmetic Progression (AP).
+
+**1. The Worst-Case Array Setup**
+Imagine a perfectly balanced, sequential array centered around zero:
+`[-K, -(K-1), ..., -2, -1, 0, 1, 2, ..., K-1, K]`
+The total length of this array is $N = 2K + 1$.
+Therefore, the maximum value $K \approx \frac{N}{2}$.
+
+**2. Counting Valid Pairs for a Single Anchor**
+If we pin a single negative anchor, say $-X$, we need to find two distinct positive numbers, $Y$ and $Z$, that sum to $X$ (so $-X + Y + Z = 0$).
+*   If $X = 10$, the pairs are $(1, 9), (2, 8), (3, 7), (4, 6)$.
+*   For any arbitrary anchor $X$, there are roughly $\frac{X}{2}$ valid pairs.
+
+**3. Summing Across All Anchors (The AP)**
+To find the total possible triplets, we sum the valid pairs for every negative anchor from $X = 1$ up to $K$:
+$$\text{Total Triplets} \approx \sum_{X=1}^{K} \frac{X}{2}$$
+
+We can pull out the constant $\frac{1}{2}$ to reveal the standard Arithmetic Progression sum formula:
+$$\frac{1}{2} \sum_{X=1}^{K} X = \frac{1}{2} \left( \frac{K(K+1)}{2} \right) \approx \frac{K^2}{4}$$
+
+**4. Translating Back to Big-O ($N$)**
+Since $K \approx \frac{N}{2}$, we substitute $K$ back into the formula:
+$$\text{Total Triplets} \approx \frac{(\frac{N}{2})^2}{4} = \frac{\frac{N^2}{4}}{4} = \frac{N^2}{16}$$
+
+**The Verdict:**
+In Big-O notation, we drop the constant divisor ($16$). The mathematical ceiling for the number of unique triplets that can be generated from an array of size $N$ is exactly **$O(N^2)$**.
+
+### Visualizing the $O(N^2)$ Growth
+
+Let's build a small, perfectly balanced array without zero to strictly visualize the mathematical proof (where we pin a negative anchor $-X$ and find two positive numbers $Y$ and $Z$).
+
+**Array:** `[-6, -5, -4, -3, -2, -1, 1, 2, 3, 4, 5, 6]`  
+Here, $N = 12$, and our maximum value $K = 6$.
+
+Let's count how many valid pairs we can find for each negative anchor <br/>
+**NOTE**: is the anchor is positive then all the numbers after the same is positive
+
+*   **Anchor `-6` (Needs sum of +6):**
+    Pairs: `(1, 5)`, `(2, 4)` $\rightarrow$ **2 triplets**
+*   **Anchor `-5` (Needs sum of +5):**
+    Pairs: `(1, 4)`, `(2, 3)` $\rightarrow$ **2 triplets**
+*   **Anchor `-4` (Needs sum of +4):**
+    Pairs: `(1, 3)` $\rightarrow$ **1 triplet**
+*   **Anchor `-3` (Needs sum of +3):**
+    Pairs: `(1, 2)` $\rightarrow$ **1 triplet**
+*   **Anchor `-2` (Needs sum of +2):**
+    No distinct positive integers sum to 2 $\rightarrow$ **0 triplets**
+*   **Anchor `-1` (Needs sum of +1):**
+    No distinct positive integers sum to 1 $\rightarrow$ **0 triplets**
+
+**The Progression:**
+Look at the number of valid triplets generated as the anchor grows: `0, 0, 1, 1, 2, 2`.
+
+If we expanded $K$ to 10 (array size 20), the sequence of triplets generated per anchor would be:
+`0, 0, 1, 1, 2, 2, 3, 3, 4, 4`
+
+This creates a distinct "staircase" pattern. Every time you increase the size of the array, you are adding consecutive integers to this sequence (an Arithmetic Progression).
+
+Because the sum of an arithmetic sequence $1 + 2 + 3 + ... + M$ evaluates to $\frac{M(M+1)}{2}$ (which is $O(M^2)$), the total number of triplets inherently grows at a quadratic $O(N^2)$ rate relative to the size of the array.
