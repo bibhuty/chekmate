@@ -1,6 +1,6 @@
 # 📐 Pattern Note: 1D Sweep Line Algorithm
 
-### 1. Core Mental Model & Formal Definition
+### Core Mental Model & Formal Definition
 A **Sweep Line Algorithm** solves interval overlap and scheduling problems by passing an imaginary vertical line across a 1D timeline. Instead of checking every continuous point on the axis, the line **jumps strictly from discrete "event point" to "event point"**, updating a running state only where changes occur.
 
 ```text
@@ -23,7 +23,7 @@ Every Sweep Line implementation has three formal components:
 
 ---
 
-### 2. The Boundary Tie-Breaker Rule: Half-Open `[a, b)` vs. Closed `[a, b]`
+### The Boundary Tie-Breaker Rule: Half-Open `[a, b)` vs. Closed `[a, b]`
 
 When one interval ends at timestamp `t` (`[1, 4]`) and another starts at the exact same timestamp `t` (`[4, 7]`), how we
 handle coordinate `4` determines whether touching boundaries count as overlapping:
@@ -35,7 +35,7 @@ handle coordinate `4` determines whether touching boundaries count as overlappin
 
 ---
 
-### 3. The 3 Implementation Templates
+### The 3 Implementation Templates
 
 #### Approach 1: Event List Sorting (`sortedLineSweep` — Universal Default)
 * **When to use:** Default choice for static array inputs. Handles negative timestamps, `Integer.MIN_VALUE`, and $10^9$ ranges with zero index math.
@@ -122,3 +122,4 @@ int maxConcurrentWithTreeMap(int[][] logs){
     return maxActive;
 }
 ```
+> **💡 Golden Rule:** Always define `-1` as **"the exact timestamp the resource becomes FREE"** (`end` for `[a, b)`, or `end + 1` for `[a, b]`). Then your tie-breaker is **always** `-1` before `+1` (`Integer.compare(a[1], b[1])`) across every template!

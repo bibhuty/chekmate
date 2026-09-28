@@ -61,7 +61,7 @@
 
 ### Sweep Line & Scheduling (Google SWE Core)
 - [x] **M1:** Minimum Platforms `[Striver]`
-- [ ] **M2:** Meeting Rooms II `[Striver]`
+- [x] **M2:** Meeting Rooms II `[Striver]`
 - [ ] **H1:** The Skyline Problem `[Striver]` *(The ultimate test of Sweep Line + Priority Queue)*
 
 ---
