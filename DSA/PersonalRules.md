@@ -22,7 +22,8 @@
 **🚨 The Integer Traps:**
 - **The Upgrade Rule:** If a sum, product, or factorial could exceed `10^9`, cast to `long` *before* the math happens (e.g., `long j = (long) i * i;`).
 - **The `MIN_VALUE` Trap:** `Integer.MIN_VALUE` is `-2147483648`, but `MAX_VALUE` is `2147483647`. `Math.abs(Integer.MIN_VALUE)` overflows and remains negative. Always cast to `long` first!
-- **The Modulo Hint:** If a problem says "Return the answer modulo 10^9 + 7", it's a massive hint that the intermediate steps will overflow even a `long`.
+- **The Comparator Subtraction Trap:** Never use subtraction `(o1, o2) -> o1[0] - o2[0]` when input bounds can reach `Integer.MIN_VALUE` / `Integer.MAX_VALUE` (e.g., `-2e9 - 2e9` overflows to a positive number and breaks the sort). Always use `Integer.compare(o1[0], o2[0])`.
+- **The Modulo Hint:** If a problem says "Return the answer modulo 10^9 + 7", it's a massive hint that the intermediate steps will overflow even a `long`. Modulo Hint:** If a problem says "Return the answer modulo 10^9 + 7", it's a massive hint that the intermediate steps will overflow even a `long`.
 
 ### 2. Floating Point (Approximations)
 - **`float` (32-bit):** ~7 significant decimal digits. Max ≈ `3.4 × 10^38`.
@@ -53,6 +54,7 @@
 - **Quick List Initialization**: Use `Arrays.asList(a, b, c)` to instantly create a populated list in one line (e.g., for returning triplets) rather than writing multiple `.add()` statements. *(Note: This returns a fixed-size list).*
 - **`List.getLast()`**: Available in modern Java (21+) as part of `SequencedCollection`. A much cleaner alternative to `list.get(list.size() - 1)`.
 - **`List.toArray()` for 2D Arrays**: Convert a list of arrays instantly via `results.toArray(new int[results.size()][2])` or simply `results.toArray(new int[results.size()][])`.
+  - - **Memory Thrashing with `new int[size][2]`**: When pre-allocating a 2D array just to hold row references (e.g., during Merge Sort `left`/`right` splits), use `new int[size][]`. Specifying the inner `[2]` forces Java to instantiate inner array objects in the heap that you immediately overwrite, thrashing the Garbage Collector.
 
 ### Sets & Maps (Syntax & Performance)
 - **`HashSet` vs `TreeSet`:**

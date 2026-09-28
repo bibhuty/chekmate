@@ -56,7 +56,7 @@
 
 ### Interval Overlaps (Merge, Insert)
 - [x] **M1:** Merge Intervals `[LC150 / Striver]`
-- [ ] **M2:** Non-overlapping Intervals `[LC75 / Striver]`
+- [x] **M2:** Non-overlapping Intervals `[LC75 / Striver]`
 - [ ] **H1:** Insert Interval `[LC75 / LC150 / Striver]`
 
 ### Sweep Line & Scheduling (Google SWE Core)
