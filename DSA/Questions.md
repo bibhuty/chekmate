@@ -60,7 +60,7 @@
 - [ ] **H1:** Insert Interval `[LC75 / LC150 / Striver]`
 
 ### Sweep Line & Scheduling (Google SWE Core)
-- [ ] **M1:** Minimum Platforms `[Striver]`
+- [x] **M1:** Minimum Platforms `[Striver]`
 - [ ] **M2:** Meeting Rooms II `[Striver]`
 - [ ] **H1:** The Skyline Problem `[Striver]` *(The ultimate test of Sweep Line + Priority Queue)*
 
