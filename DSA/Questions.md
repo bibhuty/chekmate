@@ -50,7 +50,7 @@
 - [ ] **H1:** Trapping Rain Water `[LC150 / Striver]`
 
 ### Matrix Manipulation (Traversal, Rotation, Zeroing)
-- [ ] **M1:** Rotate Image `[LC150 / Striver]`
+- [x] **M1:** Rotate Image `[LC150 / Striver]`
 - [ ] **M2:** Set Matrix Zeroes `[LC150 / Striver]`
 - [ ] **H1:** Game of Life `[LC150]`
 
