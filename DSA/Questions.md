@@ -51,7 +51,7 @@
 
 ### Matrix Manipulation (Traversal, Rotation, Zeroing)
 - [x] **M1:** Rotate Image `[LC150 / Striver]`
-- [ ] **M2:** Set Matrix Zeroes `[LC150 / Striver]`
+- [x] **M2:** Set Matrix Zeroes `[LC150 / Striver]`
 - [ ] **H1:** Game of Life `[LC150]`
 
 ### Interval Overlaps (Merge, Insert)
