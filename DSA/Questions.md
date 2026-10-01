@@ -68,8 +68,8 @@
 
 ## 3. Binary Search
 ### Binary Search on 1D Arrays
-- [ ] **M1:** Search in Rotated Sorted Array `[LC75 / LC150 / Striver]`
-- [ ] **M2:** Find First and Last Position of Element in Sorted Array `[LC150 / Striver]`
+- [x] **M1:** Search in Rotated Sorted Array `[LC75 / LC150 / Striver]`
+- [x] **M2:** Find First and Last Position of Element in Sorted Array `[LC150 / Striver]`
 - [ ] **H1:** Median of Two Sorted Arrays `[LC150 / Striver]`
 
 ### Binary Search on 2D Arrays (Matrices)
