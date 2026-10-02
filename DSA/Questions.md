@@ -73,7 +73,7 @@
 - [ ] **H1:** Median of Two Sorted Arrays `[LC150 / Striver]`
 
 ### Binary Search on 2D Arrays (Matrices)
-- [ ] **M1:** Search a 2D Matrix `[LC75 / LC150 / Striver]`
+- [x] **M1:** Search a 2D Matrix `[LC75 / LC150 / Striver]`
 - [ ] **M2:** Search a 2D Matrix II `[Striver]`
 - [ ] **H1:** Find a Peak Element II `[Striver]`
 
