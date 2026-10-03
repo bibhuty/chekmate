@@ -74,7 +74,7 @@
 
 ### Binary Search on 2D Arrays (Matrices)
 - [x] **M1:** Search a 2D Matrix `[LC75 / LC150 / Striver]`
-- [ ] **M2:** Search a 2D Matrix II `[Striver]`
+- [x] **M2:** Search a 2D Matrix II `[Striver]`
 - [ ] **H1:** Find a Peak Element II `[Striver]`
 
 ### Binary Search on Answers (Min/Max optimization)
